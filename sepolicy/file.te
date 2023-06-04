@@ -52,7 +52,3 @@ allow sysfs_type tmpfs:filesystem associate;
 # debugfs types
 type debugfs_mali, fs_type, debugfs_type;
 type debugfs_ion, fs_type, debugfs_type;
-
-# FPS Info
-type sysfs_graphics, fs_type, sysfs_type, mlstrustedobject;
-type sysfs_fps, sysfs_type, fs_type;
