@@ -27,7 +27,6 @@ TARGET_NO_RADIOIMAGE := true
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
-#TARGET_SLSI_VARIANT := bsp
 TARGET_SOC := exynos7880
 TARGET_BOOTLOADER_BOARD_NAME := universal7880
 BOARD_VENDOR := samsung
@@ -109,9 +108,6 @@ USE_OPENGL_RENDERER := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 BOARD_USES_EXYNOS5_COMMON_GRALLOC := true
 
-# VR Front buffer
-#BOARD_USES_VR_FRONT_BUFFER := true
-
 # Samsung OpenMAX Video
 BOARD_USE_STOREMETADATA := true
 BOARD_USE_METADATABUFFERTYPE := true
@@ -140,14 +136,10 @@ BOARD_USES_VPP := true
 #BOARD_USES_VPP_V2 := true // 8890 only
 BOARD_HDMI_INCAPABLE := true
 
-# HWCServices - requires framework support
-#BOARD_USES_HWC_SERVICES := true
-
 # Device Tree
 BOARD_USES_DT := true
 
 # WiFiDisplay
-#BOARD_USES_VIRTUAL_DISPLAY := true - depends on platform changes
 BOARD_USES_VIRTUAL_DISPLAY_DECON_EXT_WB := false
 BOARD_USE_VIDEO_EXT_FOR_WFD_DRM := false
 BOARD_USES_VDS_BGRA8888 := true
@@ -204,9 +196,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-12-01
-
-# Release tools
-#TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
 
 # Recovery
 #RECOVERY_VARIANT := twrp
